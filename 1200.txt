@@ -1,0 +1,14 @@
+安装snap7 Python模块到开发板：
+1.下载安装包python-snap7-0.10.tar.gz并解压；
+2.复制到开发板，运行命令python ./setup.py install；
+3.验证是否安装成功：>>>import snap7 
+
+Ubuntu安装snap7
+1.sudo add-apt-repository ppa:gijzelaar/snap7；
+2.sudo apt-get update；
+3.sudo apt-get install libsnap71 libsnap7-dev；
+4.pip install python-snap7
+
+西门子s7-1200/1500系列关于权限方面的说明：
+1、CPU属性中，常规->保护->连接机制勾选“允许从远程伙伴使用PUT/GET访问”
+2、如果需要访问数据块，在数据块属性中，取消选中优化块访问。                                                                                                                                                                                                                                                                          
